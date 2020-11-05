@@ -1,5 +1,8 @@
 package com.tarefa.rpg;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Objects;
 import javax.swing.JOptionPane;
 
@@ -88,7 +91,7 @@ public class JogoDetetive {
             System.out.println("Sua quantidade de pontos é de: " + pontosDoJogo);
             System.out.println("\n======================================");
 
-            System.out.println("Washington, AM 8h00");
+            System.out.println("Washington, 8h00 AM");
             System.out.println("Começo da operação");
             System.out.println(" ");
             System.out.println("Intrutor deixa você em frente a uma cafeteria.");
@@ -110,7 +113,7 @@ public class JogoDetetive {
             System.out.println(nome + ", fecha o caderno. - Preciso interrogar a testemunha 1...\n");
 
             System.out.println("\n======================================\n");
-            System.out.println("Washington, interrogação 1. \nAM 10h30");
+            System.out.println("Washington, interrogação 1. \n10h30 AM");
             System.out.println("LOCAL: Casa da testemunha. \nTestemunha 1: Anne Clark");
             System.out.println(" ");
             System.out.println(depoimentoDaTestemunha);
@@ -122,7 +125,7 @@ public class JogoDetetive {
             alternativas[2] = 22; // Array
 
             System.out.println("Resolva o cálculo de função abaixo: ");
-            System.out.println("f(x)=5x−3 \nf(5))\n");
+            System.out.println("f(x)= 5x - 3 \nf(5))");
             System.out.println("Escolha uma das opções abaixo: ");
             System.out.println("0) 21");
             System.out.println("1) 12");
@@ -145,7 +148,7 @@ public class JogoDetetive {
 
             System.out.println("Sua quantidade de pontos é: " + pontosDoJogo);
             System.out.println("\n======================================\n");
-            System.out.println("Washington, interrogando a testemunha 2 AM 11:37");
+            System.out.println("Washington, interrogando a testemunha 2  11:37 AM");
             System.out.println("LOCAL: Bar do Urso \nTestemunha 2: John Grey"); 
 
             System.out.println(depoimentoDoJohn);
@@ -163,7 +166,7 @@ public class JogoDetetive {
             System.out.println("\nInvestigação da cena do crime");
                
             System.out.println("\n======================================\n");
-            System.out.println("Washington, visitando o hacker PM 03:23");
+            System.out.println("Washington, visitando o hacker  03:23 PM");
 
             System.out.println("Conversa entre detetive e hacker");
             JOptionPane.showMessageDialog(null, "Decodificando a Senha! \nDescubra as partes da senha realizando os exercicios.");
@@ -209,7 +212,7 @@ public class JogoDetetive {
             JOptionPane.showMessageDialog(null, "Digite a senha: ");
             
             Integer resposta;
-      
+                       
             do {
                        
                 resposta = Integer.parseInt(JOptionPane.showInputDialog("\n1) 1227\n2)1226 \n3) 1225 \n 4)1217\n 5)1272 "));        
@@ -248,3 +251,7 @@ public class JogoDetetive {
         }		
     }
 }
+
+
+/*List <String> alternativas = new ArrayList<>(); // Vetor
+            alternativas.add("1, 1/4"); Certa*/
