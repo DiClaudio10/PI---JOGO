@@ -7,8 +7,8 @@ import javax.swing.JOptionPane;
 
 public class DetetiveJogo_ {
 
-    static List<String> ListaGeral = new ArrayList<>(); // global
-    static Integer respostaGeral; // global
+    static List<String> ListaGeral = new ArrayList<>(); //global
+    static Integer respostaGeral; //global
     static String nome;
 
     public static void main(String[] args) {
@@ -16,30 +16,32 @@ public class DetetiveJogo_ {
         Integer pontosDoJogo = 0;
         Integer pontosTeste = 0;
 
-        String jogar = "Você entrou no jogo.";
-        String creditos = " Ana Luiza \n Claúdio \n Daniel \n Érico \n Júlia";
+        String jogar = "Você entrou no jogo!";
+        String creditos = " Ana Luiza \nClaúdio \nDaniel \nÉrico \nJúlia";
         String enredo = "Você é um grande prodígio dentro da Academia Eyers, "
-                + "até que um um renomado detetive chamado Peralta é brutalmente assasinado na cidade de washington. "
+                + "até que um um renomado detetive chamado Peralta é brutalmente assasinado na cidade de washington."
                 + "Você tem a grande missão de solucionar esse caso!";
 
         String sair = "Saiu do jogo.";
         String depoimentoDaTestemunha = "Estava sozinha naquele dia, eu e meu noivo terminamos essa semana e fui beber para tentar esquecer daquele idiota."
                 + "Me lembro desse homem entrando no bar e mexendo com esse detetive, estavam falando algo sobre drogas se não me engano. - Diz pensativa -"
-                + "eles começaram se exaltar um com o outro e o segurança interfiriu. Infelizmente " + nome+", sou uma pessoa curiosa e após eles sairem esperei uns"
+                + "eles começaram se exaltar um com o outro e o segurança interfiriu. Infelizmente " + nome + ", "
+                + "sou uma pessoa curiosa e após eles sairem esperei uns"
                 + "10 minutos antes de sair e ver se estavam discutindo ainda na rua...";
-        String depoimentoDoJohn = "Já era tarde, o bar estava para se fechar e eu estava na parte privada do bar resolvendo assuntos administrativos, "
-                + "quando percebi que tinha algo errado no bar. Ao ir dar uma olhada no que estava acontecendo, vi o Sr. Peralta e outro indivíduo discutindo entre si,"
-                + " foi quando interferi e pedi para que o segurança os retirasse se não chamaria a polícia. "
-                + "Depois de alguns dias do lado de fora do bar, ao lado da lixeira, achei um telefone, guardei pensando que poderia ser de um cliente e que ele poderia retornar para buscar.";
 
-        
-        JOptionPane.showMessageDialog(null, "Bem vindo ao Shadow Detectives"); // Só aparece a mensagem
+        String depoimentoDoJohn = "Já era tarde, o bar estava para se fechar e eu estava na parte privada do bar resolvendo assuntos administrativos, "
+                + "quando percebi que tinha algo errado no bar. Ao ir dar uma olhada no que estava acontecendo, "
+                + "vi o Sr. Peralta e outro indivíduo discutindo entre si,"
+                + " foi quando interferi e pedi para que o segurança os retirasse se não chamaria a polícia. "
+                + "Depois de alguns dias do lado de fora do bar, ao lado da lixeira, achei um telefone, "
+                + "guardei pensando que poderia ser de um cliente e que ele poderia retornar para buscar.";
+
+        JOptionPane.showMessageDialog(null, "Bem vindo ao Shadow Detectives"); //Só aparece a mensagem
 
         respostaGeral = Integer.parseInt(JOptionPane.showInputDialog(
-                "Escreva uma das opções abaixo que deseja: \n 1- Jogar " + "\n 2- Créditos \n 3- Enredo \n 4- Sair")); // MENU
+                "Escreva uma das opções abaixo que deseja: \n 1- Jogar " + "\n 2- Créditos \n 3- Enredo \n 4- Sair")); //MENU
 
-        //MENU - Ana
-        do {           
+        do {
             switch (respostaGeral) {
                 case 1:
                     System.out.println(jogar);
@@ -67,35 +69,33 @@ public class DetetiveJogo_ {
         } while (respostaGeral != 4 && respostaGeral != 1);
 
         if (respostaGeral == 4) {
-           System.exit(0);
-            
+            System.exit(0);
+
         } else if (respostaGeral == 1) {
-            
-            //ERICO
+
             nome = JOptionPane.showInputDialog("Escreva o seu nome: ");
             System.out.println("Bem vindo ao Shadow Detectives, " + nome);
             System.out.println("\n======================================\n");
-            
-            System.out.println("Washington, Detective Eyers. \n8h30 AM");       
+
+            System.out.println("Washington, Detective Eyers. \n8h30 AM");
             System.out.println("Personagem: Detetive");
             System.out.println("\nAluno: Vocês souberam que o Detetive Peralta morreu durante um caso? - Diz euforico ao entrar na sala"
                     + "\nOutro Aluno: Não soube, Brian!\nBrian:Ele era minha inspiração! Está circulando que o melhor aluno da academia irá pegar o caso!");
             System.out.println(nome + ": Espero que eles me escolham. Gostaria de descobrir quem foi o filha da mãe que o matou e faze-lo pagar!");
             System.out.println("Instrutor: Silencio todos! - Entra na sala e se posiciona em frente a sala com uma carta preta em mãos \n- Como todos sabem nosso melhor detetive foi assassinado"
                     + "durante essa semana. Um de nossos alunos irá pegar o caso. A revelação acontecera agora - Diz e mostra a carta\n"
-                    +"E o escolhido foi... " + nome);
+                    + "E o escolhido foi... " + nome);
             System.out.println(nome + ": Eu? - Pergunto abismado\nInstrutor: Sim, você! - Diz com um sorriso no rosto batendo palmas");
-            
+
             System.out.println("\n======================================\n");
             System.out.println("Instrutor: " + nome + ", vamos iniciá-lo para esse caso com um teste básico.");
-            
-      
+
             JOptionPane.showMessageDialog(null, "AVISO!\nO enredo e as questões estaram todas no console.\nFique atento!");
             JOptionPane.showMessageDialog(null, "NIVEL FÁCIL!");
             System.out.println("");
 
-            Integer[] alternativas = new Integer[3]; // Vetor
-            alternativas[0] = 70; // Certa
+            Integer[] alternativas = new Integer[3]; //Vetor
+            alternativas[0] = 70; //CERTA
             alternativas[1] = -70;
             alternativas[2] = 130;
 
@@ -109,7 +109,7 @@ public class DetetiveJogo_ {
             respostaGeral = Integer
                     .parseInt(JOptionPane.showInputDialog("Escolha uma das opções abaixo: \n0) 70\n1)-70 \n2) 130"));
 
-            if (Objects.equals(alternativas[respostaGeral], alternativas[0])) { // Comparar o valor 'raiz' das variaveis
+            if (Objects.equals(alternativas[respostaGeral], alternativas[0])) { //Comparar o valor 'raiz' das variaveis
                 System.out.println("\nResposta Correta!\n");
                 System.out.println("Instrutor: " + nome + ", você foi bem no teste! Está pronto para iniciar o caso.");
                 pontosDoJogo = +20;
@@ -141,9 +141,9 @@ public class DetetiveJogo_ {
                     + "3- Execução próximo a casa da testemunha 1.");
 
             JOptionPane.showMessageDialog(null,
-                    "1- Vitima encontrada na avenida Northwest\n2- Assasinado durante um caso\n"
-                    + "3- Execução próximo a casa da testemunha 1.");
-            System.out.println(nome + ", fecha o caderno. - Preciso interrogar a testemunha 1...\n");
+                    "1-Vitima encontrada na avenida Northwest\n2 Assasinado durante um caso\n"
+                    + "3-Execução próximo a casa da testemunha 1.");
+            System.out.println(nome + ", fecha o caderno. -Preciso interrogar a testemunha 1...\n");
 
             System.out.println("\n======================================\n");
             System.out.println("Washington, interrogação 1 10h30 AM");
@@ -155,21 +155,21 @@ public class DetetiveJogo_ {
 
             alternativas[0] = 21;
             alternativas[1] = 12;
-            alternativas[2] = 22; // CERTA
+            alternativas[2] = 22; //CERTA
 
             System.out.println("Resolva o cálculo de função abaixo: ");
             System.out.println("f(x)= 5x - 3 \nf(5))");
             System.out.println("Escolha uma das opções abaixo: ");
             System.out.println("0) 21");
             System.out.println("1) 12");
-            System.out.println("2) 22");// CERTA
+            System.out.println("2) 22"); //CERTA
             respostaGeral = Integer.parseInt(
                     JOptionPane.showInputDialog("Escolha uma dentre as opções abaixo: \n0) 21\n1) 12 \n2) 22"));
 
-            if (Objects.equals(alternativas[respostaGeral], alternativas[2])) { // Comparar o valor 'raiz' das variaveis
+            if (Objects.equals(alternativas[respostaGeral], alternativas[2])) { //Comparar o valor 'raiz' das variaveis
                 System.out.println("\nResposta Correta!\n");
                 System.out.println("Anne: Acho que lembrei de uma coisa! Quando vi eles brigando apareceu o segurança, "
-                        + "e ameaçou de chamar a policia."  
+                        + "e ameaçou de chamar a policia."
                         + "Os dois sairam correndo em lados opostos mas acho que vi algum objeto caindo do bolso do suspeito."
                         + "\nInfelizmente, só lembro disso.");
                 System.out.println(nome + ": Já foi de imensa ajuda!");
@@ -180,10 +180,7 @@ public class DetetiveJogo_ {
                 System.out.println("\nResposta Incorreta!\n");
 
             }
-            //FIM ERICO
-            
-            
-            //CLAUDIO
+
             System.out.println("Sua quantidade de pontos é: " + pontosDoJogo);
             System.out.println("\n======================================\n");
             System.out.println("Washington, interrogando a testemunha 2  11:37 AM");
@@ -191,7 +188,7 @@ public class DetetiveJogo_ {
 
             System.out.println(depoimentoDoJohn);
             System.out.println(" ");
-       
+
             System.out.println("\nInvestigação da cena do crime");
 
             System.out.println("\n======================================\n");
@@ -204,7 +201,7 @@ public class DetetiveJogo_ {
             JOptionPane.showMessageDialog(null, "QUESTÃO NIVEL MEDIO!");
 
             alternativas[0] = 3;
-            alternativas[1] = 1; // CERTA
+            alternativas[1] = 1; //CERTA
             alternativas[2] = 4;
 
             System.out.println("\nResolva a seguinte equação do 2º grau.\n" + "3x² – 7x + 4 = 0\n");
@@ -214,7 +211,7 @@ public class DetetiveJogo_ {
             respostaGeral = Integer
                     .parseInt(JOptionPane.showInputDialog("Escolha uma das opções abaixo: \n0) 3\n1) 1 \n2) 4"));
 
-            if (Objects.equals(alternativas[respostaGeral], alternativas[1])) { // Comparar o valor 'raiz' das variaveis
+            if (Objects.equals(alternativas[respostaGeral], alternativas[1])) { //Comparar o valor 'raiz' das variaveis
                 System.out.println("\nResposta Correta!\n");
                 System.out.println("Numero: 12");
 
@@ -226,12 +223,10 @@ public class DetetiveJogo_ {
             System.out.println("\nAssinale o valor de X' e o X'', respectivamente: ");
             String a = "1, 3/3";
             String b = "1, 3/4";
-            String c = "1, 4/3";// CERTA
+            String c = "1, 4/3"; //CERTA
 
             String resposta6 = JOptionPane
-                    .showInputDialog("Escolha uma das opções abaixo: \nA) 1, 3/3\nB)1, 3/4 \nC) 1, 4/3"); // Joption
-            // aceita
-            // String
+                    .showInputDialog("Escolha uma das opções abaixo: \nA) 1, 3/3\nB)1, 3/4 \nC) 1, 4/3"); //JoptionPane aceita String
 
             if (resposta6.equals(c)) {
                 System.out.println("Numero: 27");
@@ -275,8 +270,7 @@ public class DetetiveJogo_ {
 
             System.out.println(
                     "Legal,conseguimos entrar no smartphone do suspeito!\nAgora temos algumas opções para chegar até ele:");
-       
-            
+
             Integer celular;
 
             do {
@@ -327,10 +321,7 @@ public class DetetiveJogo_ {
             } while (celular != 7);
 
             JOptionPane.showMessageDialog(null, "Pista encontrada!");
-            //FIM ERICO
-            
-            
-            //Ana         
+
             System.out.println("\n======================================\n");
             System.out.println("Washington, SUSPEITO  07:23 PM");
             System.out.println("LOCAL: Bar do Urso");
@@ -350,20 +341,20 @@ public class DetetiveJogo_ {
 
             if (respostaGeral == 1) {
 
-                ListaGeral.clear();
                 System.out.println("OPÇÃO OBSERVAR\n");
 
                 JOptionPane.showMessageDialog(null, "QUESTÃO NIVEL HARD");
                 System.out.println(
-                        "Dada a equação do segundo grau x² – 3x – 4 = 0, assinale a alternativa que apresenta, respectivamente, os valores de Δ e da soma das raízes dessa equação.");
+                        "Dada a equação do segundo grau x² – 3x – 4 = 0, assinale a alternativa que apresenta, "
+                        + "respectivamente, os valores de Δ e da soma das raízes dessa equação.");
 
-                ListaGeral.add("Apenas 3");
-                ListaGeral.add("25 e 3");
-                ListaGeral.add("25 e – 2");
-                ListaGeral.add(" 3 e – 2"); // Certa
-                ListaGeral.add("Apenas – 2");
+                String alternativas2[] = new String[4];
 
-                System.out.println("\nQuais são as raízes reais da equação x2 – x = 6?\n");
+                alternativas2[0] = "Apenas 3";
+                alternativas2[1] = "25 e 3";
+                alternativas2[2] = "25 e – 2";
+                alternativas2[3] = "3 e – 2"; //CERTA
+                alternativas2[4] = "Apenas – 2";
 
                 respostaGeral = Integer.parseInt(JOptionPane.showInputDialog(
                         "Escolha uma das opções abaixo: \n0) Apenas\n1) 25 e 3 \n2) 25 e – 2 \n3) 3 e – 2 \n4)Apenas – 2 "));
@@ -373,66 +364,92 @@ public class DetetiveJogo_ {
                 System.out.println("Suspeito: John, ande rápido com isso! - Diz inquieto ao perceber seu olhar.");
                 System.out.println("John: Está aqui! - Entrega-lhe o celular");
                 System.out.println(
-                        "Suspeito: Obrigado - Diz pegando o celular.\nLevanta e caminha em direção a saida. Esbarra em um cliente e não percebe quando sua chave do carro cai no chão - Desculpa.");
+                        "Suspeito: Obrigado - Diz pegando o celular.\nLevanta e caminha em direção a saida. "
+                        + "Esbarra em um cliente e não percebe quando sua chave do carro cai no chão - Desculpa.");
                 System.out.println(nome + ": -Percebe que a chave caiu e a pega  - Senhor! - Vai atrás do suspeito.");
                 System.out.println("Encontra o suspeito no estacionamento procurando as chaves");
                 System.out.println(nome + ": Acho que isso é do senhor - Entrega a chave para o suspeito");
                 System.out.println("Suspeito: Obrigado");
                 System.out.println(nome
-                        + ": Escuta... Fiquei sabendo que você vende algumas coisas ilicitas... Estou interessado em algumas delas... - Diz e saca uma nota de 100 reais");
+                        + ": Escuta... Fiquei sabendo que você vende algumas coisas ilicitas... Estou interessado em algumas delas... "
+                        + "- Diz e saca uma nota de 100 reais");
                 System.out.println(
-                        "Suspeito: Tenho tudo que você quiser, mas como vou saber se você não é um tira? Encontre-me amanha as 10 horas da noite no beco ali.");
+                        "Suspeito: Tenho tudo que você quiser, mas como vou saber se você não é um tira?"
+                        + " Encontre-me amanha as 10 horas da noite no beco ali.");
                 System.out.println(nome + ": Combinado!");
 
-            } else {
-                System.out.println("OPÇÃO OBSERVAR\n");
+            } else if (respostaGeral == 2) {
+                
+                JOptionPane.showMessageDialog(null, "OPÇÃO CONVERSAR");
+
+                System.out.println("OPÇÃO CONVERSAR\n");
                 System.out.println(nome
-                        + ": -Senta ao lado do suspeito e fica olhando o cardapio por um tempo. - Você poderia me ajudar? Estou querendo saber o que pedir, sou novo na região");
+                        + ": -Senta ao lado do suspeito e fica olhando o cardapio por um tempo. "
+                        + "- Você poderia me ajudar? Estou querendo saber o que pedir, sou novo na região");
                 System.out.println(
                         "Suspeito: Claro - Pega o cardapio e mostra uma bebida -  Essa marguerita aqui é otima.");
                 System.out.println(nome + ": Vou experimentar!");
                 System.out.println(
-                        "John: Aqui está seu celular - Entrega o aparelho para o suspeito -  E o que o senhor vai querer? - Anota o pedido do detetive logo em seguida");
+                        "John: Aqui está seu celular - Entrega o aparelho para o suspeito -  E o que o senhor vai querer? "
+                        + "- Anota o pedido do detetive logo em seguida");
                 System.out.println(nome + ": Que sorte que achou seu celular! Já perdi tantos... - Dá risada");
                 System.out.println("Suspeito: Pois é - Dá risada - Foi uma sorte! - E o que te traz aqui nesse bar?");
                 System.out.println(nome
-                        + ": Como eu tinha falado, estou em procura de algumas coisas e soube que você as vende... Coisas ilicitas. Gostaria de compra-las.");
+                        + ": Como eu tinha falado, estou em procura de algumas coisas e soube que você as vende... Coisas ilicitas. "
+                        + "Gostaria de compra-las.");
                 System.out.println(
-                        "Suspeito: Tenho tudo que você quiser, mas como vou saber se você não é um policial? Encontre-me amanha as 10 horas da noite no beco ali na esquina."
+                        "Suspeito: Tenho tudo que você quiser, mas como vou saber se você não é um policial? "
+                        + "Encontre-me amanha as 10 horas da noite no beco ali na esquina."
                         + "- Diz enquanto bebe sua bebida - Aproveite sua margueritra - Levanta e se dirije a saída.");
 
                 JOptionPane.showMessageDialog(null, "QUESTÃO NIVEL HARD");
 
                 System.out.println("\nResolva a seguinte equação\n" + "f(x)= -x²  + 40x + 120\n");
+                respostaGeral = Integer.parseInt(JOptionPane.showInputDialog(
+                        "Escolha uma das opções abaixo: \n0) Apenas\n1) 25 e 3 \n2) 25 e – 2 \n3) 3 e – 2 \n4) Apenas – 2 "));
 
-                ListaGeral.clear();
+                /*String alternativa5[] = new String[4];
 
-                ListaGeral.add("Apenas 3");
-                ListaGeral.add("25 e 3");
-                ListaGeral.add("25 e – 2");
-                ListaGeral.add("3 e – 2"); // Certa
-                ListaGeral.add("Apenas – 2");
+                alternativa5[0] = "Apenas 3";
+                alternativa5[1] = "25 e 3";
+                alternativa5[2] = "25 e – 2";
+                alternativa5[3] = "3 e – 2"; //CERTA
+                alternativa5[4] = "Apenas – 2";
 
                 System.out.println("\nQuais são as raízes reais da equação x2 – x = 6?\n");
 
                 respostaGeral = Integer.parseInt(JOptionPane.showInputDialog(
-                        "Escolha uma das opções abaixo: \n0) Apenas\n1) 25 e 3 \n2) 25 e – 2 \n3) 3 e – 2 \n4)Apenas – 2 "));
+                        "Escolha uma das opções abaixo: \n0) Apenas\n1) 25 e 3 \n2) 25 e – 2 \n3) 3 e – 2 \n4) Apenas – 2 "));
 
                 if (Objects.equals(ListaGeral.indexOf(respostaGeral), ListaGeral.indexOf(3))) {
                     System.out.println("\nResposta Correta!\n");
-                    System.out.println("Revela alguma pista");
-
-                    pontosDoJogo += 40;
+                    
 
                 } else {
                     System.out.println("\nResposta Incorreta!\n");
-                    System.out.println("Suspeito não liga para o detetive");
+                    
+                }*/
+                switch (respostaGeral) {
+                    
+                    case 0:
+                    case 1:
+                    case 2:
+                    case 3:
+                        System.out.println("Respota Incorreta!");
+                        System.out.println("Suspeito não liga para o detetive");
+                        break;
+                    case 4:
+                        System.out.println("Resposta Correta!");
+                        System.out.println("Revela alguma pista");
+
+                        pontosDoJogo += 40;
+                        break;
+
                 }
+
                 System.out.println("Pontos atuais: " + pontosDoJogo);
             }
-            //FIM ANA
-            
-            //JULIA
+
             System.out.println("\n======================================\n");
             System.out.println("Washington, Dia Seguinte  00:15 PM");
             System.out.println("Detetive no beco");
@@ -444,126 +461,152 @@ public class DetetiveJogo_ {
                             + ": Claro, estou interessado naquela parada."
                             + "\nTed: Cara, eu ja sei de tudo, sei que você é da polícia");
 
-            ListaGeral.clear();
-
-            ListaGeral.add("144m");
-            ListaGeral.add("576m");
-            ListaGeral.add("24m");
-            ListaGeral.add("18m");
-            ListaGeral.add("12m"); // certa
-
             System.out.println("\n\nRESOLVA ESTA EQUAÇÃO PARA CONVENCER QUE VOCÊ NÃO É UM POLICIAL PARA TED");
+
             JOptionPane.showMessageDialog(null, "QUESTÕES HARD");
             JOptionPane.showMessageDialog(null, "TESTE 1");
 
-            
+            /*String alternativa4[] = new String[5];
 
+            alternativa4[0] = "144m";
+            alternativa4[1] = "576m";
+            alternativa4[2] = "24m";
+            alternativa4[3] = "18m";
+            alternativa4[4] = "12m"; //CERTA*/
+            
             JOptionPane.showMessageDialog(null,
                     "Um terreno quadrado possui área de 144 metros quadrados e apenas a sua frente ainda não está murada.");
 
             System.out.println(
-                    "Um terreno quadrado possui área de 144 metros quadrados e apenas a sua frente ainda não está murada.");
-
-            System.out.println("\nQuantos metros de muro terão que ser feitos para isolar completamente esse terreno?"
-                    + "\n1) 144m \n2) 576m \n3) 24m \n4) 18m \n5) 12m");
+                    "Um terreno quadrado possui área de 144 metros quadrados e apenas a sua frente ainda não está murada."
+                    + "\nQuantos metros de muro terão que ser feitos para isolar completamente esse terreno?"
+                    + "\n0) 144m \n1) 576m \n2) 24m \n3) 18m \n4) 12m");
 
             respostaGeral = Integer.parseInt(JOptionPane.showInputDialog(
                     "Quantos metros de muro terão que ser feitos para isolar completamente esse terreno?"
-                    + "\n1) 144m \n2) 576m \n3) 24m \n4) 18m \n5) 12m"));
+                    + "\n0) 144m \n1) 576m \n2) 24m \n3) 18m \n5) 12m"));
 
-            if (Objects.equals(ListaGeral.indexOf(respostaGeral), ListaGeral.indexOf(5))) {
+            switch (respostaGeral) {
+                case 0:
+                case 1:
+                case 2:
+                case 3:
+                    System.out.println("Resposta Incorreta");
+                    break;
+                case 4:
+                    System.out.println("Resposta Correta!");
+                    System.out.println("Você concluiu o teste com maestria");
+                    pontosTeste += 30;
+                    break;
+
+            }
+
+            /*if (Objects.equals(alternativa4[respostaGeral], alternativa4[5])) {
                 System.out.println("\nResposta Correta!\n");
-                System.out.println("Você concluiu o teste com maestria");
+                
 
-                pontosTeste += 30;
+               
 
             } else {
                 System.out.println("\nResposta Incorreta!\n");
                 System.out.println("");
-            }
-            System.out.println("Pontos atuais: " + pontosDoJogo);
+            }*/
+            System.out.println("Pontos Atuais: " + pontosDoJogo);
 
         }
 
-        ListaGeral.clear();
+        /*String alternativa5[] = new String[4];
 
-        ListaGeral.add("f(x) = 1,5x + 5");
-        ListaGeral.add("f(12) = 1,5.12 + 5");
-        ListaGeral.add("f(12) = 18 + 5");
-        ListaGeral.add("f(12) = 23"); // certa
+        alternativa5[0] = "f(x) = 1,5x + 5";
+        alternativa5[1] = "f(12) = 1,5.12 + 5";
+        alternativa5[2] = "f(12) = 18 + 5";
+        alternativa5[3] = "f(12) = 23"; //CERTA*/
+        JOptionPane.showMessageDialog(null, "TESTE 2");
 
         System.out.println(
-                "Uma empresa de táxi cobra a bandeirada de R$ 5,00 e ainda o valor de R$ 1,50 para cada quilômetro rodado. Determine a lei da função correspondente ao valor cobrado "
+                "Uma empresa de táxi cobra a bandeirada de R$ 5,00 e ainda o valor de R$ 1,50 para cada quilômetro rodado."
+                + " Determine a lei da função correspondente ao valor cobrado "
                 + "pelos táxis dessa empresa e qual é o valor cobrado em uma corrida de 12 km."
                 + "\nComo a empresa cobra R$ 5,00 só para entrar no carro, então esse valor é fixo, ou seja, é a variável independente. "
                 + "A variável dependente é o valor de R$ 1,50 cobrado por quilômetro rodado. Sendo assim, a lei da função é f(x) = 1,5x + 5");
 
-        JOptionPane.showMessageDialog(null, "TESTE 2");
-
-        System.out.println("\n1) f(x) = 1,5x + 5 \n2)f(12) = 1,5.12 + 5 \n3)f(12) = 18 + 5 \n4)f(12) = 23");
+        System.out.println("\n0) f(x) = 1,5x + 5 \n1) f(12) = 1,5.12 + 5 \n2) f(12) = 18 + 5 \n3) f(12) = 23");
 
         respostaGeral = Integer.parseInt(JOptionPane.showInputDialog(
                 "Para a distância de 12 km, teremos:"
-                + "\n1) f(x) = 1,5x + 5 \n2)f(12) = 1,5.12 + 5 \n3)f(12) = 18 + 5 \n4)f(12) = 23"));
+                + "\n0) f(x) = 1,5x + 5 \n1) f(12) = 1,5.12 + 5 \n2) f(12) = 18 + 5 \n3) f(12) = 23"));
 
-        if (Objects.equals(ListaGeral.indexOf(respostaGeral), ListaGeral.indexOf(4))) {
+        switch (respostaGeral) {
+
+            case 0:
+            case 1:
+            case 2:
+                System.out.println("Resposta Incorreta");
+                break;
+                
+            case 3:
+                System.out.println("Resposta Correta");
+                System.out.println("Você concluiu mais um teste com maestria");
+
+                pontosTeste += 20;
+                break;
+
+        }
+
+        /*if (Objects.equals(alternativa5[respostaGeral], alternativa5[4])) {
             System.out.println("\nResposta Correta!\n");
-            System.out.println("Você concluiu mais um teste com maestria");
-
-            pontosTeste += 20;
+            
 
         } else {
             System.out.println("\nResposta Incorreta!\n");
             System.out.println("");
-        }
+        }*/
         System.out.println("Pontos atuais: " + pontosDoJogo);
 
         if (pontosTeste < 20) {
-            System.out.println("suspeito confia");
+            System.out.println("Suspeito Desconfia");
 
         } else {
-            System.out.println("suspeito desconfia");
+            System.out.println("Suspeito Confia");
 
-            System.out.println("Por conta do seu mal rendimento nos outros testes Ted desconfiou de você.");
-            System.out.println("Realize este teste para receber a confiança de Ted");
+            JOptionPane.showMessageDialog(null, "Por conta do seu mal rendimento"
+                    + " nos outros testes Ted desconfiou de você.");
+            JOptionPane.showMessageDialog(null, "Realize este teste para receber "
+                    + "a confiança de Ted");
 
-            ListaGeral.clear();
+            /*String alternativa6[] = new String[5];
 
-            ListaGeral.add("k=2");
-            ListaGeral.add("k=5");
-            ListaGeral.add("k=0");
-            ListaGeral.add("k=-1");
-            ListaGeral.add("k=3"); // certa
-
+            alternativa6[0] = "k = 2";
+            alternativa6[1] = "k = 5";
+            alternativa6[2] = "k = 0";
+            alternativa6[3] = "k = -1";
+            alternativa6[4] = "k = 3"; //CERTA*/
             System.out.println("Considerando que p(x) = 2x³ – kx² + 3x – 2k, para que valores de k temos p(2) = 4?");
 
-            System.out.println("\n1)k=2 \n2)k=5 \n3)k=0 \n4)k=-1 \n5)k=3");
+            System.out.println("\n0)k = 2 \n1)k = 5 \n2)k = 0 \n3)k = -1 \n4)k = 3");
 
-            for (int i = 0; i < 5;) {
+            respostaGeral = Integer.parseInt(JOptionPane.showInputDialog("Considerando que p(x) = 2x³ – kx² + 3x – 2k,"
+                    + " para que valores de k temos p(2) = 4?"
+                    + "\n0)k = 2 \n1)k = 5 \n2)k = 0 \n3)k = -1 \n4)k = 3"));
 
-                respostaGeral = Integer.parseInt(JOptionPane.showInputDialog("Considerando que p(x) = 2x³ – kx² + 3x – 2k, para que valores de k temos p(2) = 4?"
-                        + "\n1)k=2 \n2)k=5 \n3)k=0 \n4)k=-1 \n5)k=3"));
-
-                if (Objects.equals(ListaGeral.indexOf(respostaGeral), ListaGeral.indexOf(5))) {
-                    System.out.println("\nResposta Correta!\n");
-                    System.out.println("Você recebeu a confiança de Ted");
-
-                    pontosTeste += 20;
-
+            switch (respostaGeral) {
+                case 0:
+                case 1:
+                case 2:
+                case 3:
+                    System.out.println("Resposta Incorreta!");
                     break;
 
-                } else {
-                    System.out.println("\nResposta Incorreta!\n");
-                    System.out.println("");
-                    i++;
-                }
-            }
+                case 4:
+                    System.out.println("Resposta Correta!");
+                    System.out.println("Você recebeu a confiança de Ted");
+                    break;
 
+            }          
         }
 
     }
-    
-//Claudio
+
     static void contatos() {
         System.out.println("1-Jason ");
         System.out.println("2- Trevor ");
@@ -582,19 +625,18 @@ public class DetetiveJogo_ {
             case 1:
                 System.out.println("Linha ocupada.");
                 break;
+
             case 2:
-                System.out.println(
-                        "Trevor: Iae Ted! Você sumiu! Nem contou" + "o final que deu daquele cara que estava te seguindo!");
-                respostaGeral = Integer
-                        .parseInt(JOptionPane.showInputDialog("E agora, devo me passar pelo assassino ou não? "
-                                + "\n1 - Passar-se pelo assassino \n2 - Desligar"));
+                System.out.println("Trevor: Iae Ted! Você sumiu! Nem contou" + "o final que deu daquele cara que estava te seguindo!");
+                respostaGeral = Integer.parseInt(JOptionPane.showInputDialog("E agora, devo me passar pelo assassino ou não?"
+                        + "\n1 - Passar-se pelo assassino \n2 - Desligar"));
 
                 if (respostaGeral == 1) {
                     System.out
                             .println(nome + ": Então cara! Tenho novidades - Dá risada - Pode me encontrar na Praça Darks");
                     System.out.println("Trevor: Beleeza! Se cuida mano, percebi que você ta gripado - Desliga.");
                 } else {
-                    System.out.println(nome + ": -Desliga a chamada.");
+                    System.out.println(nome +  " desliga a chamada.");
                 }
 
                 break;
@@ -638,14 +680,4 @@ public class DetetiveJogo_ {
         JOptionPane.showMessageDialog(null, "Usuario: \nSenha: ");
         System.out.println(nome + ": Não consigo entrar sem essas informações.");
     }
-
 }
-
-// Vetor[x]
-// Lista.indeOf(x)
-/*
- * List <String> alternativas = new ArrayList<>(); // Vetor
- * alternativas.add("1, 1/4"); Certa
- */
-
-//70
